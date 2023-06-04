@@ -1,0 +1,84 @@
+arguments:
+    data_fetch_params:
+      url_api: 'https://jsonplaceholder.typicode.com/posts'
+    schema_style:
+      type: 'object'
+      properties:
+        userId:
+          type: 'number'
+        id:
+          type: 'number'
+        title:
+          type: 'string'
+        body:
+          type: 'string'
+      required:
+        - 'userId'
+        - 'id'
+        - 'title'
+        - 'body'
+    outputs:
+      output_dir: 'output'
+      raw_api_data_path: 'output/api_data.json'
+      clean_data_path: 'output/cleaned_data.json'
+      loading_df_path: 'output/loading_data_df.csv'
+    db_arguments:
+      host : 'localhost' 
+      port: '3306'
+      user: 'user'
+      password: 'password'
+      database: 'api_data'
+      table: 'posts'
+
+
+          
+
+
+      #ctrl + c, ctrl + k
+      #ctrl + c, ctrl + u
+
+    # data_columns:
+    #     del_columns:
+    #         instant: 'row_index'
+    #         dteday: 'date'
+    #     category_columns:
+    #         season: 'season'
+    #         yr: 'year'
+    #         mnth : 'month'
+    #         hr: 'hour'
+    #         holiday: 'holiday_or_not'
+    #         weekday: 'weekday'
+    #         workingday: 'workingday_or_not'
+    #         weathersit: 'weather_state'
+    #     numeric_columns:
+    #         temp: 'normalized_temp'
+    #         atemp: 'normalized_feeling_temp'
+    #         hum: 'humidity'
+    #         windspeed: 'wind_speed'
+    #         casual: 'count_of_casual_users'
+    #         registered: 'count_of_registered_users'
+    #     target_column:
+    #         cnt: 'total_rental_bikes'
+    # grid_cv_params:
+    #     max_depth:
+    #         - 1
+    #         - 2 
+    #         - 3
+    #         - 4
+    #         - 5
+    #     random_state:
+    #         - 42
+    #         - 53
+    #         - 7
+    #     n_estimators:
+    #         - 10
+    #         - 20
+    #         - 30
+    #         - 40
+    #         - 50
+    #         - 60
+    #         - 70
+    #         - 80
+    #         - 90
+    #         - 100
+       

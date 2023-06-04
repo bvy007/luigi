@@ -1,0 +1,93 @@
+2023-06-04 23:33:21,486 - INFO - Directory created: output
+2023-06-04 23:33:21,499 - INFO - logging configured by default settings
+2023-06-04 23:33:21,558 - DEBUG - Checking if LoadingDatatoDB(host=localhost, port=3306, user=user, password=password, database=api_data, table=posts) is complete
+2023-06-04 23:33:21,564 - DEBUG - Checking if TransformingAPIData(output_file_path=output/loading_data_df.csv) is complete
+2023-06-04 23:33:21,567 - INFO - Informed scheduler that task   LoadingDatatoDB_api_data_localhost_password_8e1ea3862d   has status   PENDING
+2023-06-04 23:33:21,569 - DEBUG - Checking if CleaningAPIData(output_file_path=output/cleaned_data.json) is complete
+2023-06-04 23:33:21,579 - INFO - Informed scheduler that task   TransformingAPIData_output_loading_d_cc239cf140   has status   PENDING
+2023-06-04 23:33:21,580 - DEBUG - Checking if FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json) is complete
+2023-06-04 23:33:21,583 - INFO - Informed scheduler that task   CleaningAPIData_output_cleaned_d_fb27a9c9a8   has status   PENDING
+2023-06-04 23:33:21,584 - INFO - Informed scheduler that task   FetchAPIData_https___jsonplac_output_api_data__438f403d19   has status   PENDING
+2023-06-04 23:33:21,585 - DEBUG - Checking if TransformingAPIData(output_file_path=output/loading_data_df.csv) is complete
+2023-06-04 23:33:21,587 - DEBUG - Checking if CleaningAPIData(output_file_path=output/cleaned_data.json) is complete
+2023-06-04 23:33:21,589 - INFO - Informed scheduler that task   TransformingAPIData_output_loading_d_cc239cf140   has status   PENDING
+2023-06-04 23:33:21,591 - DEBUG - Checking if FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json) is complete
+2023-06-04 23:33:21,594 - INFO - Informed scheduler that task   CleaningAPIData_output_cleaned_d_fb27a9c9a8   has status   PENDING
+2023-06-04 23:33:21,595 - INFO - Informed scheduler that task   FetchAPIData_https___jsonplac_output_api_data__438f403d19   has status   PENDING
+2023-06-04 23:33:21,596 - DEBUG - Checking if CleaningAPIData(output_file_path=output/cleaned_data.json) is complete
+2023-06-04 23:33:21,597 - DEBUG - Checking if FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json) is complete
+2023-06-04 23:33:21,599 - INFO - Informed scheduler that task   CleaningAPIData_output_cleaned_d_fb27a9c9a8   has status   PENDING
+2023-06-04 23:33:21,600 - INFO - Informed scheduler that task   FetchAPIData_https___jsonplac_output_api_data__438f403d19   has status   PENDING
+2023-06-04 23:33:21,600 - DEBUG - Checking if FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json) is complete
+2023-06-04 23:33:21,602 - INFO - Informed scheduler that task   FetchAPIData_https___jsonplac_output_api_data__438f403d19   has status   PENDING
+2023-06-04 23:33:21,602 - INFO - Done scheduling tasks
+2023-06-04 23:33:21,603 - INFO - Running Worker with 1 processes
+2023-06-04 23:33:21,603 - DEBUG - Asking scheduler for work...
+2023-06-04 23:33:21,604 - DEBUG - Starting pruning of task graph
+2023-06-04 23:33:21,604 - DEBUG - Done pruning task graph
+2023-06-04 23:33:21,605 - DEBUG - Pending tasks: 4
+2023-06-04 23:33:21,605 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) running   FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json)
+2023-06-04 23:33:21,606 - INFO - Running task: FetchAPIData and Task id: FetchAPIData_https___jsonplac_output_api_data__438f403d19
+2023-06-04 23:33:21,612 - DEBUG - Starting new HTTPS connection (1): jsonplaceholder.typicode.com:443
+2023-06-04 23:33:21,731 - DEBUG - https://jsonplaceholder.typicode.com:443 "GET /posts HTTP/1.1" 200 None
+2023-06-04 23:33:21,746 - INFO - Fetching data was completed and it has 100 objects.
+2023-06-04 23:33:21,746 - INFO - Saved the json file from Task FetchAPIData at path: output/api_data.json
+2023-06-04 23:33:21,746 - INFO - Successfully executed the task FetchAPIData in 1 attempt.
+2023-06-04 23:33:21,749 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) done      FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json)
+2023-06-04 23:33:21,752 - DEBUG - 1 running tasks, waiting for next task to finish
+2023-06-04 23:33:21,754 - INFO - Informed scheduler that task   FetchAPIData_https___jsonplac_output_api_data__438f403d19   has status   DONE
+2023-06-04 23:33:21,754 - DEBUG - Asking scheduler for work...
+2023-06-04 23:33:21,754 - DEBUG - Starting pruning of task graph
+2023-06-04 23:33:21,754 - DEBUG - Done pruning task graph
+2023-06-04 23:33:21,755 - DEBUG - Pending tasks: 3
+2023-06-04 23:33:21,755 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) running   CleaningAPIData(output_file_path=output/cleaned_data.json)
+2023-06-04 23:33:21,757 - INFO - Running task: CleaningAPIData and Task id: CleaningAPIData_output_cleaned_d_fb27a9c9a8
+2023-06-04 23:33:22,481 - INFO - JSON Validation completed and it has 100 objects
+2023-06-04 23:33:22,482 - INFO - Check for mandatory(required) fields completed and it has 100 objects
+2023-06-04 23:33:22,490 - INFO - Cleaning data was completed and it has 100 objects.
+2023-06-04 23:33:22,490 - INFO - Saved the json file from Task CleaningAPIData at path: output/cleaned_data.json
+2023-06-04 23:33:22,490 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) done      CleaningAPIData(output_file_path=output/cleaned_data.json)
+2023-06-04 23:33:22,491 - DEBUG - 1 running tasks, waiting for next task to finish
+2023-06-04 23:33:22,493 - INFO - Informed scheduler that task   CleaningAPIData_output_cleaned_d_fb27a9c9a8   has status   DONE
+2023-06-04 23:33:22,493 - DEBUG - Asking scheduler for work...
+2023-06-04 23:33:22,493 - DEBUG - Starting pruning of task graph
+2023-06-04 23:33:22,494 - DEBUG - Done pruning task graph
+2023-06-04 23:33:22,494 - DEBUG - Pending tasks: 2
+2023-06-04 23:33:22,495 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) running   TransformingAPIData(output_file_path=output/loading_data_df.csv)
+2023-06-04 23:33:22,496 - INFO - Running task: TransformingAPIData and Task id: TransformingAPIData_output_loading_d_cc239cf140
+2023-06-04 23:33:22,561 - INFO - Transforming data from json to dataframe was completed and it has 100 records.
+2023-06-04 23:33:22,561 - INFO - Saved the csv file from Task TransformingAPIData at path: output/loading_data_df.csv
+2023-06-04 23:33:22,562 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) done      TransformingAPIData(output_file_path=output/loading_data_df.csv)
+2023-06-04 23:33:22,562 - DEBUG - 1 running tasks, waiting for next task to finish
+2023-06-04 23:33:22,564 - INFO - Informed scheduler that task   TransformingAPIData_output_loading_d_cc239cf140   has status   DONE
+2023-06-04 23:33:22,564 - DEBUG - Asking scheduler for work...
+2023-06-04 23:33:22,564 - DEBUG - Starting pruning of task graph
+2023-06-04 23:33:22,565 - DEBUG - Done pruning task graph
+2023-06-04 23:33:22,565 - DEBUG - Pending tasks: 1
+2023-06-04 23:33:22,566 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) running   LoadingDatatoDB(host=localhost, port=3306, user=user, password=password, database=api_data, table=posts)
+2023-06-04 23:33:22,568 - INFO - Running task: LoadingDatatoDB and Task id: LoadingDatatoDB_api_data_localhost_password_8e1ea3862d
+2023-06-04 23:33:22,761 - INFO - Data loaded into the database: api_data and table: posts successfully.
+2023-06-04 23:33:22,762 - INFO - Loaded successfully 100 records into the table: posts 
+2023-06-04 23:33:22,763 - INFO - [pid 2706] Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) done      LoadingDatatoDB(host=localhost, port=3306, user=user, password=password, database=api_data, table=posts)
+2023-06-04 23:33:22,764 - DEBUG - 1 running tasks, waiting for next task to finish
+2023-06-04 23:33:22,765 - INFO - Informed scheduler that task   LoadingDatatoDB_api_data_localhost_password_8e1ea3862d   has status   DONE
+2023-06-04 23:33:22,766 - DEBUG - Asking scheduler for work...
+2023-06-04 23:33:22,766 - DEBUG - Starting pruning of task graph
+2023-06-04 23:33:22,766 - DEBUG - Done pruning task graph
+2023-06-04 23:33:22,767 - DEBUG - Done
+2023-06-04 23:33:22,767 - DEBUG - There are no more tasks to run at this time
+2023-06-04 23:33:22,768 - INFO - Worker Worker(salt=4605634106, workers=1, host=LAPTOP-U810PCHV, username=bvy007, pid=2706) was stopped. Shutting down Keep-Alive thread
+2023-06-04 23:33:22,778 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 4 ran successfully:
+    - 1 CleaningAPIData(output_file_path=output/cleaned_data.json)
+    - 1 FetchAPIData(api_url=https://jsonplaceholder.typicode.com/posts, output_file_path=output/api_data.json)
+    - 1 LoadingDatatoDB(host=localhost, port=3306, user=user, password=password, database=api_data, table=posts)
+    - 1 TransformingAPIData(output_file_path=output/loading_data_df.csv)
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
