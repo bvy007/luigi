@@ -2,6 +2,12 @@ import re
 
 
 def clean_record(text):
+    """
+    Clean the given text
+    Returns:
+        Text without \t, \n and other special charaters 
+    """
+    
     # Remove newline characters and replace with a space
     cleaned_text = text.replace('\n', ' ')
 
@@ -15,7 +21,11 @@ def clean_record(text):
 
 
 def process_data(data):
-    # Implement your data processing logic here
+    """
+    Convert the given fields to proper datatypes and Clean the given text
+    Returns:
+        List of objects with clean text and proper datatypes
+    """
     
     #processed_data = data
     cleaned_data_json = []
