@@ -12,7 +12,7 @@ from mysql.connector import Error
 from requests.exceptions import RequestException, ConnectionError, Timeout, HTTPError
 from pydantic import BaseModel, ValidationError, validator
 
-from config.yaml_config import project_arguments as parameters 
+from yaml_config import project_arguments as parameters
 from utils import process_data
 
 # Set up logging configuration
