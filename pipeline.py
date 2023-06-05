@@ -3,16 +3,17 @@ import luigi
 import os
 import requests
 import json
-from config.yaml_config import project_arguments as parameters 
-from utils import process_data
-from requests.exceptions import RequestException, ConnectionError, Timeout, HTTPError
+import logging
 import time
 import jsonschema
 import pandas as pd
-from pydantic import BaseModel, ValidationError, validator
 import mysql.connector
 from mysql.connector import Error
-import logging
+from requests.exceptions import RequestException, ConnectionError, Timeout, HTTPError
+from pydantic import BaseModel, ValidationError, validator
+
+from config.yaml_config import project_arguments as parameters 
+from utils import process_data
 
 # Set up logging configuration
 logging.basicConfig(
