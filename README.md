@@ -8,3 +8,5 @@
 5) Install python dependencies using : ```pip install -r requirements.txt```
 6) Run pipeline.py file
 
+## Note:
+After running the ```pipeline.py``` file outputs can be found in output folder and logs can be found in app.log
