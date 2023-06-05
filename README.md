@@ -9,4 +9,4 @@
 6) Run pipeline.py file
 
 ## Note:
-After running the ```pipeline.py``` file outputs can be found in output folder and logs can be found in app.log
+After running the ```pipeline.py``` file outputs can be found in output folder and logs can be found in ```app.log``` file.
